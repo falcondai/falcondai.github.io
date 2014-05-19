@@ -27,9 +27,12 @@
 	  color: #888;
       }
       section {
-	  margin-left: 20px;
+	  /* margin-left: 20px; */
       }
-      .about {
+      #name {
+	  color: #67AAE2;
+      }
+      #about {
 	  font-size: 1.2em;
       }
       ul {
@@ -50,41 +53,40 @@
   </head>
 
   <body>
-    <h1>Falcon Dai</h1>
+    <h1 id="name">Falcon Dai</h1>
     
-    <section class="about">
+    <section id="about">
       I like to explore and create. I spend most of my time studying how human brain works and how to realize artificial intelligence. I graduated from the University of Chicago with B.S. in mathematics and B.A. in physics.
     </section>
     
-    <section class="projects">
+    <section id="projects">
       <h2>Projects</h2>
       <ul>
 	<li>3D Printing Human Brain</li>
 	<li>ECoG electrode registration</li>
 	<li>Presence</li>
-	<!-- <li></li> -->
       </ul>
     </section>
 
     <!-- <section class="demo"> -->
     <!--   <h2>Demos</h2> -->
     <!--   <ul> -->
-    <!-- 	<li></li> -->
+    <!-- 	<li><a href="/demos/depth.html">depth</a></li> -->
     <!--   </ul> -->
     <!-- </section> -->
 
-    <section class="past">
+    <section id="past">
       <h2>Past works</h2>
       <ul>
+	<li>competed in some Kaggle contests: <a href="https://www.kaggle.com/users/39662/falcon">my profile</a></li>
 	<li><a href="https://chrome.google.com/webstore/detail/wikipedia-plus/fkfdafnifmdahipdpcbpefhjlceippna">Wikipedia Plus</a>, a Chrome extension that enhances Wikipedia's user experience</li>
-	<li><a href="http://twithinks.com/gun">TwiThinks</a>, a Twitter data analytics project that studies and visualize Twitter data. Our realtime #Ivoted (for Obama vs Romney) scoreboard received 20K+ hits on Election Day 2012.</li>
+	<li><a href="http://twithinks.com/gun">TwiThinks</a>, a Twitter data analytics project that studies and visualizes Twitter data. Our realtime #Ivoted (for Obama vs Romney) scoreboard received 20K+ hits on Election Day 2012.</li>
 	<li><a href="http://stock.twithinks.com">TwiThinks Stock Tracker</a>, a project to predict stock movements from Twitter chatters</li>
 	<li><a href="https://play.google.com/store/apps/details?id=com.falcondai.android.release.volumebutton">Volume Button</a>, a 5-star Android app that replaces broken volume buttons by touch controls in the status bar accessible anywhere</li>
-	<li>competed in some Kaggle contests: <a href="https://www.kaggle.com/users/39662/falcon">my profile</a></li>
       </ul>
     </section>
 
-    <section class="blog">
+    <section id="blog">
       <h2>Recent blog posts</h2>
       <p>I have interest in quantum theory, mathematical logic, philosophy, visualization, and emerging technologies and more. I often share my thoughts about them on my blog <a href="http://blog.falcondai.com"><em>Substance</em></a>.</p>
       <ul>
@@ -95,7 +97,7 @@
       </ul>
     </section>
 
-    <section class="contact">
+    <section id="contact">
       <h2>Contact</h2>
       <ul>
 	<li><a href="https://twitter.com/falcondai">@falcondai</a></li>
