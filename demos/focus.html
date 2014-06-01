@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<style type="text/css">
+  html, body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+  }
+  #base {
+    -webkit-perspective: 800px;
+    -webkit-perspective-origin: 50% 60%;
+    height: 100%;
+    width: 100%;
+  }
+  #board {
+    margin: -50px -400px -50px -400px;
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    span: 50px;
+  }
+  .card {
+    font-size: 4em;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    transition: all 0.5s ease;
+  }
+  #footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    transition: all 0.8s ease;
+    -webkit-filter: blur(20px);
+  }
+  #footer:hover {
+    -webkit-filter: blur(0px);
+  }
+  a, a:visited {
+    text-decoration: none;
+    color: #FF9E24;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+<body>
+  <script src="jquery-2.1.1.min.js"></script>
+
+  <script type="text/javascript">
+    function gaussian (x0, lambda, x) {
+      return Math.exp(- lambda * (x - x0) * (x - x0));
+    }
+
+    function updateBlur (f, selection) {
+      selection.each(function () {
+        var z = +$(this).attr('data-z');
+        $(this).css('-webkit-filter', 'blur(' + 0.03 * Math.abs(z-f) + 'px)');
+      });
+    }
+
+    var base = $('body').append($('<div>').attr('id', 'base')),
+        board = $('#base').append($('<div>').attr('id', 'board'));
+    
+    var step = 80,
+        f = -150,
+        k = 0.1,
+        focus = 'FOCUS',
+        n = -1;
+    while (++n < focus.length) {
+      var z = n * step;
+      $('#board').append(
+        $('<span>').attr('class', 'card')
+          .text(focus[n])
+          .attr('data-z', z)
+          .mouseenter(function () {
+            var z = +$(this).attr('data-z');
+            updateBlur(z, $('.card'));
+          })
+          .mouseleave(function () {
+          })
+      ).mouseleave(function () {
+	$('.card').each(function () {
+	  $(this).css('-webkit-filter', 'none');
+	  $(this).css('-webkit-transform', 'translateZ(0px)');
+	});
+      }).mouseenter(function () {
+	$('.card').each(function () {
+	  updateBlur(0, $('.card'));
+	  $(this).css('-webkit-transform', 'translateZ(' + $(this).attr('data-z') + 'px)');
+	});
+      });
+    }
+  </script>
+  <div id="footer">by <a href="/">Falcon Dai</a></div>
+</body>
+</html>
