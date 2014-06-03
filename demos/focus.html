@@ -15,14 +15,15 @@
     width: 100%;
   }
   #board {
-    margin: -50px -400px -50px -400px;
+    margin: -100px -400px -100px -400px;
     position: absolute;
     width: 800px;
-    height: 100px;
+    height: 200px;
     left: 50%;
     top: 50%;
     text-align: center;
-    span: 50px;
+    /* to pass mouse events to cards with z<0 */
+    z-index: -1;
   }
   .card {
     font-size: 4em;
@@ -75,7 +76,8 @@
         focus = 'FOCUS',
         n = -1;
     while (++n < focus.length) {
-      var z = n * step;
+      // make z=0 for 'C' 
+      var z = (n-2) * step;
       $('#board').append(
         $('<span>').attr('class', 'card')
           .text(focus[n])
@@ -98,6 +100,11 @@
 	});
       });
     }
+
+    // control perspective origin with mouse movement
+    $('#base').mousemove(function (e) {
+      $(this).css('-webkit-perspective-origin', e.pageX + 'px ' + e.pageY + 'px');
+    });
   </script>
   <div id="footer">by <a href="/">Falcon Dai</a></div>
 </body>
