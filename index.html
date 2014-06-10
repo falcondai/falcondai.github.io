@@ -16,7 +16,9 @@
       @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Condensed:300,400);
       body {
 	  font-family: 'Droid Sans', 'Ubuntu', Arial, sans-serif;
-	  margin: 10px;
+	  margin: 0 20%;
+	  padding: 10px;
+	  border-left: 10px solid #67AAE2;
       }
       h1, h2 {
 	  font-family: 'Roboto Condensed', Helvetica, sans-serif;
@@ -49,6 +51,12 @@
       a:hover {
 	  text-decoration: underline;
       }
+
+      @media only screen and (max-width: 1000px) {
+	  body {
+	      margin: 0 0;
+	  }
+      }
     </style>
   </head>
 
@@ -71,7 +79,7 @@
     <section class="demo">
       <h2>Demos</h2>
       <ul>
-    	<li><a href="/demos/focus.html">Focus</a>, simulating focus+depth visual effect with CSS 3D transform and CSS filter. (This demo requires webkit filter support, so it only works in the latest Chrome browser)</li>
+    	<li><a href="/demos/focus.html">Focus</a>, simulating focus+depth visual effect with CSS 3D transform and CSS filter. (This demo requires webkit filter support, so it only works in the latest desktop Chrome browser)</li>
       </ul>
     </section>
 
