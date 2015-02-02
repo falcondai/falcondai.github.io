@@ -34,13 +34,20 @@
     margin: 30px;
     transition: all 0.5s ease;
   }
+  #description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    color: #aaa;
+  }
   #footer {
     position: absolute;
     top: 0;
     left: 0;
     margin: 10px;
     transition: all 0.8s ease;
-    -webkit-filter: blur(20px);
+    -webkit-filter: blur(5px);
   }
   #footer:hover {
     -webkit-filter: blur(0px);
@@ -73,28 +80,29 @@
 
     function updateBlur (f, selection) {
       selection.each(function () {
-        var z = +$(this).attr('data-z');
+        var z = +$(this).data('z');
         $(this).css('-webkit-filter', 'blur(' + 0.03 * Math.abs(z-f) + 'px)');
       });
     }
 
     var base = $('body').append($('<div>').attr('id', 'base')),
         board = $('#base').append($('<div>').attr('id', 'board'));
-    
+
     var step = 80,
         f = -150,
         k = 0.1,
         focus = 'FOCUS',
         n = -1;
     while (++n < focus.length) {
-      // make z=0 for 'C' 
-      var z = (n-2) * step;
+      // make z=0 for 'C'
+      // var z = (n-2) * step;
+      var z = (Math.random() - 0.5) * 400;
       $('#board').append(
         $('<span>').attr('class', 'card')
           .text(focus[n])
-          .attr('data-z', z)
+          .data('z', z)
           .mouseenter(function () {
-            var z = +$(this).attr('data-z');
+            var z = +$(this).data('z');
             updateBlur(z, $('.card'));
           })
           .mouseleave(function () {
@@ -107,7 +115,7 @@
       }).mouseenter(function () {
 	$('.card').each(function () {
 	  updateBlur(0, $('.card'));
-	  $(this).css('-webkit-transform', 'translateZ(' + $(this).attr('data-z') + 'px)');
+	  $(this).css('-webkit-transform', 'translateZ(' + $(this).data('z') + 'px)');
 	});
       });
     }
@@ -117,6 +125,7 @@
       $(this).css('-webkit-perspective-origin', e.pageX + 'px ' + e.pageY + 'px');
     });
   </script>
+  <div id="description">(refresh page to change letters' positions)</div>
   <div id="footer">by <a href="/">Falcon Dai</a></div>
 </body>
 </html>
