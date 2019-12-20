@@ -14,7 +14,7 @@
     <link rel="author" href="https://plus.google.com/100753323689686892506" />
 
     <style>
-        @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Condensed:300,400);
+        @import url(//fonts.googleapis.com/css?family=Droid+Sans|Roboto+Condensed:300,400);
         body {
             font-family: 'Droid Sans', 'Ubuntu', Arial, sans-serif;
             margin: 0 20%;
@@ -51,6 +51,10 @@
 
         ul {
             list-style-type: square;
+        }
+
+        li {
+          margin-bottom: 8px;
         }
 
         abbr {
@@ -101,61 +105,110 @@
         I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments. I graduated from the University of Chicago with B.S. in mathematics and B.A. in physics. I am currently a PhD candidate at TTI-Chicago focusing on reinforcement learning (sequential decision making in an unknown environment). Professor Matthew Walter is my advisor.
     </section>
 
-    <section id="projects">
+    <section id="interests">
         <h2>Research interests</h2>
         <ul>
-            <li>Foundation of reinforcement learning</li>
-            <li>Incorporating domain knowledge in reinforcement learning</li>
-            <li>Incorporating glyphs in Chinese natural language processing</li>
+          <li>
+            Foundation of reinforcement learning (optimism, regret, safety) <a href="#p-mehc">[1]</a> <a href="#p-loop">[2]</a>
+          </li>
+          <li>
+            Meaning and interpretation (semiotics, semantics, philosophy of language) <a href="#p-w2v">[1]</a>
+          </li>
+          <li>
+            Social implications of machine learning (algorithmic safeguards, human-centric objectives) <a href="#p-stega">[1]</a>
+          </li>
+          <li>
+            3D computer vision (surface normals, geometric landmarks) <a href="#p-electrode">[1]</a> <a href="#p-diode">[2]</a>
+          </li>
+          <li>
+            Chinese natural language processing (glyph) <a href="#p-glyph">[1]</a>
+          </li>
         </ul>
     </section>
 
-    <section class="demo">
-        <h2>Demos</h2>
+    <section id="publications">
+        <h2>Publications</h2>
         <ul>
-            <li><a href="/demos/focus.html">Focus</a>, simulating focus+depth visual effect with CSS 3D transform and CSS filter. (This demo requires webkit filter support, so it only works in the latest desktop Chrome browser)</li>
-            <li><a href="http://twithinks.com/gun">visualization of geo-temporal distribution of Twitter chatter</a>, interactive data visualizations with the elegant D3.js library</li>
+          <li id="p-mehc">
+            Dai FZ, Walter MR. <i>Maximum Expected Hitting Cost of a Markov Decision Process and Informativeness of Rewards.</i> Neural Information Processing Systems (NeurIPS), 2019. <a href="https://arxiv.org/abs/1907.02114">[paper]</a> <a href="https://github.com/falcondai/poster-MEHC-PBRS/raw/master/poster.pdf">[poster]</a>
+          </li>
+          <li id="p-stega">
+            Dai FZ, Cai Z. <i>Towards Near-imperceptible Steganographic Text.</i> Association for Computational Linguistics (ACL), 2019. <a href="https://arxiv.org/abs/1907.06679">[paper]</a> <a href="http://www.livecongress.it/aol/indexSA.php?id=8CB5CB4E&ticket=">[talk]</a> <a href="/posters/poster-steganographic-text.pdf">[poster]</a> <a href="https://github.com/falcondai/lm-steganography">[code]</a> <a href="http://www.acl2019.org/EN/nominations-for-acl-2019-best-paper-awards.xhtml">[nominated for best paper awards]</a>
+          </li>
+          <li id="p-plan">
+            Gehrmann S, Dai FZ, Elder H, Rush AM. <i>End-to-End Content and Plan Selection for Natural Language Generation.</i> International Conference on Natural Language Generation (INLG), 2018. <a href="https://arxiv.org/abs/1810.04700">[paper]</a> <a href="https://github.com/sebastianGehrmann/diverse_ensembling">[code]</a>
+          </li>
+          <li id="p-glyph">
+            Dai FZ, Cai Z. <i>Glyph-aware Embedding of Chinese Characters.</i> Subword and Character level models in NLP workshop at Empirical Methods in Natural Language Processing conference (EMNLP), 2017. <a href="https://arxiv.org/abs/1709.00028">[paper]</a> <a href="/posters/poster-glyph.pdf">[poster]</a> <a href="https://github.com/falcondai/chinese-char-lm">[code]</a>
+          </li>
+          <li>
+            Towle VL, Dai Z, Zheng W, Issa N. <i>“Mapping Cortical Function with Event-Related Electrocorticography”</i> in <i>Functional Mapping of the Cerebral Cortex</i>, ed. Richard W. Byrne. (Springer, 2016), 91-104. <a href="https://link.springer.com/chapter/10.1007/978-3-319-23383-3_6">[chapter]</a> <a href="https://link.springer.com/book/10.1007/978-3-319-23383-3">[book]</a>
+          </li>
+          <li id="p-electrode">
+            Brang D, Dai Z, Zhang W, Towle VL. <i>Registering Imaged ECoG Electrodes to Human Cortex: A Geometry-based Technique.</i> Journal of neuroscience methods, 64-73. 2016. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5075506/">[paper]</a> <a href="https://github.com/towle-lab/electrode-registration-app">[software]</a>
+          </li>
+          <li>
+            Brang D, Towle VL, Suzuki S, Hillyard SA, Di Tusa S, Dai Z, Wu S, Tao J, Grabowecky M. <i>Peripheral sounds rapidly activate visual cortex: evidence from electrocorticography.</i> Journal of Neurophysiology, 3023-3028. 2015. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4737427/">[paper]</a>
+          </li>
+          <li>
+            Towle VL, Minama Reddy GK, Dai Z, Zhang W, Brang D, Hunter S, Kohrman MH, Marcucilli CJ, Tao J, Rossi MA, Frim DM, Byrne RW. <i>Chasing Language Through the Brain: Three Successive Parallel Networks.</i> Society for the Neurobiology of Language Conference, 2014.
+          </li>
+        </ul>
+    </section>
+
+    <section id="working-papers">
+        <h2>Working papers</h2>
+        <ul>
+          <li id="p-w2v">
+            Dai FZ. <i>Word2vec Conjecture and A Limitative Result.</i> In submission, 2019. [manuscript available upon request]
+          </li>
+          <li id="p-loop">
+            Dai FZ, Walter MR. <i>Loop Estimators for Discounted Values in Markov Reward Processes.</i> In submission, 2019. [manuscript available upon request]
+          </li>
+          <li id="p-diode">
+            Vasiljevic I, Kolkin N, Zhang S, Luo R, Wang H, Dai FZ, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <i>DIODE: A Dense Indoor and Outdoor DEpth Dataset.</i> In submission, 2019. <a href="https://arxiv.org/abs/1908.00463">[preprint]</a> <a href="https://diode-dataset.org/">[website]</a>
+          </li>
         </ul>
     </section>
 
     <section id="past">
         <h2>Past works</h2>
         <ul>
-            <li>3D printing my MRI-scanned brain: <a href="/images/3d-printed-brain.jpg">photo</a></li>
-            <li>electrocochleography (ECoG) electrode MR-CT registration: <a href="https://github.com/towle-lab/electrode-registration-app">software</a> </li>
-            <li>competed in some Kaggle contests: <a href="https://www.kaggle.com/users/39662/falcon">my profile</a></li>
-            <li><a href="https://chrome.google.com/webstore/detail/wikipedia-plus/fkfdafnifmdahipdpcbpefhjlceippna">Wikipedia Plus</a>, a Chrome extension that enhances Wikipedia's user experience</li>
-            <li><a href="http://twithinks.com">TwiThinks</a>, a Twitter data analytics project that studies and visualizes Twitter data. Our realtime #Ivoted (for Obama vs Romney) scoreboard received 20K+ hits on Election Day 2012.</li>
-            <li><a href="http://stock.twithinks.com">TwiThinks Stock Tracker</a>, a project to predict stock movements from Twitter chatters</li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.falcondai.android.release.volumebutton">Volume Button</a>, a 5-star Android app that replaces broken volume buttons by touch controls in the status bar accessible anywhere</li>
-            <li><a href="http://falcondai.herokuapp.com">my old website</a> on Heroku</li>
+          <li>3D printing my MRI-scanned brain: <a href="/images/3d-printed-brain.jpg">photo</a>.</li>
+          <li>Electrocochleography (ECoG) electrode MR-CT registration: <a href="https://github.com/towle-lab/electrode-registration-app">software</a>.</li>
+          <li>Once ranked 164th on <a href="https://www.kaggle.com/falcon">Kaggle</a>.</li>
+          <li><a href="https://chrome.google.com/webstore/detail/wikipedia-plus/fkfdafnifmdahipdpcbpefhjlceippna">Wikipedia Plus</a>, a Chrome extension that enhances Wikipedia's user experience.</li>
+          <li><a href="/demos/focus.html">Focus</a>, simulating focus+depth visual effect with CSS 3D transform and CSS filter.</li>
+          <li><a href="http://twithinks.com">TwiThinks</a>, a Twitter data analytics project that studies and visualizes Twitter data. Our realtime #Ivoted (for Obama vs Romney) scoreboard received 20K+ hits on Election Day 2012.</li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.falcondai.android.release.volumebutton">Volume Button</a>, a 5-star Android app that replaces broken volume buttons by touch controls in the status bar accessible anywhere.</li>
         </ul>
     </section>
 
     <section id="blog">
         <h2>Recent blog posts</h2>
-        <p>Besides machine learning, I have interest in quantum theory, mathematical logic, philosophy, visualization, and emerging technologies and more. I often share my thoughts about them on my blog <a href="http://blog.falcondai.com"><em>Substance</em></a>.</p>
+        <p>Besides machine learning, I have interest in quantum theory, mathematical logic, philosophy, visualization, and emerging technologies and more. I often share my thoughts about them on my blog <a href="https://blog.falcondai.com"><em>Substance</em></a>.</p>
         <ul>
-            <li><a href="http://blog.falcondai.com/2014/04/quick-easy-way-to-mount-google-glass.html">Quick & easy way to mount Google Glass onto eyeglasses</li>
-          	<li><a href="http://blog.falcondai.com/2013/10/fixing-galaxy-nexuss-imei-number.html">Fixing Galaxy Nexus's IMEI Number</a></li>
-            <li><a href="http://blog.falcondai.com/2013/06/666-and-how-twitter-samples-tweets-in.html">666 and How Twitter Samples Tweets in Streaming API</a></li>
-            <li><a href="http://blog.falcondai.com/2012/05/free-will-and-determinism.html">Free Will and Determinism</a></li>
+          <li><a href="http://blog.falcondai.com/2014/04/quick-easy-way-to-mount-google-glass.html">Quick & easy way to mount Google Glass onto eyeglasses</li>
+        	<li><a href="http://blog.falcondai.com/2013/10/fixing-galaxy-nexuss-imei-number.html">Fixing Galaxy Nexus's IMEI Number</a></li>
+          <li><a href="http://blog.falcondai.com/2013/06/666-and-how-twitter-samples-tweets-in.html">666 and How Twitter Samples Tweets in Streaming API</a></li>
+          <li><a href="http://blog.falcondai.com/2012/05/free-will-and-determinism.html">Free Will and Determinism</a></li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <ul>
-            <li><a href="https://twitter.com/falcondai">@falcondai</a></li>
-            <li><a href="mailto:hello@falcondai.com">hello@falcondai.com</a></li>
+          <li>twitter <a href="https://twitter.com/falcondai">@falcondai</a></li>
+          <li>email <a href="mailto:hello@falcond.ai">hello@falcond.ai</a></li>
         </ul>
     </section>
 
     <section id="profile">
         <h2>Elsewhere on the Web</h2>
         <ul>
-            <li><a href="https://github.com/falcondai">GitHub</a></li>
-            <li><a href="https://www.kaggle.com/users/39662/falcon">Kaggle</a></li>
+          <li><a href="https://scholar.google.com/citations?user=fm0h6EkAAAAJ&hl=en">Google Scholar</a></li>
+          <li><a href="https://github.com/falcondai">GitHub</a></li>
+          <li><a href="https://stackoverflow.com/users/1121123/falcon">Stack Overflow</a></li>
         </ul>
     </section>
 </body>
