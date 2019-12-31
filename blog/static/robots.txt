@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://falcond.ai/sitemap.xml
