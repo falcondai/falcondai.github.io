@@ -10,6 +10,7 @@ import SEO from "gatsby-theme-blog/src/components/seo"
 // CV
 import cvPdf from '../assets/docs/cv-web.pdf'
 // Posters
+import mehcPoster from '../assets/docs/poster-mehc.pdf'
 import stegaPoster from '../assets/docs/poster-steganographic-text.pdf'
 import glyphPoster from '../assets/docs/poster-glyph.pdf'
 // Images
@@ -102,7 +103,7 @@ export default ({
         <li id="p-mehc">
           Dai FZ, Walter MR. <em>Maximum Expected Hitting Cost of a Markov Decision Process and Informativeness of Rewards.</em> Neural Information Processing Systems (NeurIPS), 2019.
           <AboutLink to="https://arxiv.org/abs/1907.02114" linkText="paper" />
-          <AboutLink to="https://github.com/falcondai/poster-MEHC-PBRS/raw/master/poster.pdf" linkText="poster" />
+          <AboutLink to={mehcPoster} linkText="poster" />
         </li>
         <li id="p-stega">
           Dai FZ, Cai Z. <em>Towards Near-imperceptible Steganographic Text.</em> Association for Computational Linguistics (ACL), 2019.
