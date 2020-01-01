@@ -1,0 +1,22 @@
+name: CI
+
+on: 
+  push:
+    branches: 
+    - dev
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Node.js for use with actions
+      uses: actions/setup-node@v1.1.0
+    - name: Install all depedencies (including dev)
+      run: npm install 
+    - name: Install Gatsby CLI
+      run: npm install -g gatsby-cli
+    - name: Build and deploy
+      run: npm run build && gh-pages -d public -b master -r https://${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
