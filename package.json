@@ -1,5 +1,10 @@
 {
-  "name": "gatsby-starter-blog-theme",
+  "name": "falcondai-blog",
+  "author": {
+    "name" : "Falcon Dai",
+    "email" : "me@falcond.ai",
+    "url" : "https://falcond.ai"
+  },
   "private": true,
   "version": "0.0.1",
   "scripts": {
@@ -14,7 +19,6 @@
     "@theme-ui/presets": "^0.2.44",
     "@theme-ui/prism": "^0.2.50",
     "@theme-ui/typography": "^0.2.46",
-    "deepmerge": "^4.2.2",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-manifest": "^2.2.34",
@@ -38,10 +42,10 @@
     "remark-capitalize": "^1.1.0",
     "remark-parse": "^6.0.3",
     "theme-ui": "^0.2.52",
-    "typeface-lato": "0.0.75",
     "typeface-roboto-condensed": "0.0.75",
-    "typescript": "^3.7.4",
-    "typography-theme-judah": "^0.16.19",
-    "typography-theme-wordpress-2014": "^0.16.19"
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
