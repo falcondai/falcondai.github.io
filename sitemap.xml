@@ -3,7 +3,6 @@
 <url> <loc>https://falcond.ai/blog/md-test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://falcond.ai/blog/some-math/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://falcond.ai/blog/my-second-post/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://falcond.ai/blog/hello-world/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://falcond.ai/blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://falcond.ai/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
