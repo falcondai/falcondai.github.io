@@ -46,7 +46,7 @@ export default ({
 }) => (
   <Layout title={title}>
     <SEO
-      title="About"
+      title="Falcon Dai"
       description="I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments."
       keywords={['artificial intelligence', 'reinforcement learning', 'natural language processing', 'blog']}
     />

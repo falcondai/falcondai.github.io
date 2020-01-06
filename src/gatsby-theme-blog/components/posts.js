@@ -19,7 +19,7 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
         const keywords = node.keywords || []
         return (
           <Fragment key={node.slug}>
-            <SEO title="Blog" keywords={keywords} />
+            <SEO title="Blog | Falcon Dai" keywords={keywords} />
             <div>
               <Styled.h2
                 css={css({

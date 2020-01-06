@@ -13,12 +13,12 @@ export default ({
   },
 }) => (
   <Layout title={title}>
-    <SEO title='404' />
+    <SEO title='404 | Falcon Dai' />
     <Styled.h1>Error 404</Styled.h1>
     <Styled.p>
-      🤯 Page not found. If you think that this page should exist, tell me about it by opening an{` `}
-      <Styled.a href="https://github.com/falcondai/falcondai.github.io/issues">
-        issue
+      🤯 Page not found. If you think that this page should exist, tell me about it via a tweet {` `}
+      <Styled.a href="https://twitter.com/falcondai">
+        @falcondai
       </Styled.a>.
     </Styled.p>
   </Layout>
