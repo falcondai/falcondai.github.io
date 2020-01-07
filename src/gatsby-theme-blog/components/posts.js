@@ -7,7 +7,7 @@ import SEO from "gatsby-theme-blog/src/components/seo"
 
 // The blog index page
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
-  <Layout location={location} title={siteTitle}>
+  <Layout title={siteTitle}>
     <main>
       <div>
         <Styled.p>
@@ -19,7 +19,12 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
         const keywords = node.keywords || []
         return (
           <Fragment key={node.slug}>
-            <SEO title="Blog | Falcon Dai" keywords={keywords} />
+            <SEO
+              title="Blog"
+              location={location.href}
+              keywords={keywords}
+              description="👋 Welcome to my opinionated blog where I share ideas technical, philosophical, or otherwise."
+            />
             <div>
               <Styled.h2
                 css={css({

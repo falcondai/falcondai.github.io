@@ -64,7 +64,9 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://falcond.ai`,
     title: `Falcon Dai`,
+    titleTemplate: `%s | Falcon Dai`,
     author: `Falcon Dai`,
+    authorTwitter: `@falcondai`,
     description: `The personal website and blog of Falcon Dai.`,
     social: [
       {

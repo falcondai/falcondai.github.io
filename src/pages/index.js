@@ -43,10 +43,12 @@ export default ({
       },
     },
   },
+  location,
 }) => (
   <Layout title={title}>
     <SEO
-      title="Falcon Dai"
+      location={location.href}
+      previewImage={fluid.src}
       description="I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments."
       keywords={['artificial intelligence', 'reinforcement learning', 'natural language processing', 'blog']}
     />

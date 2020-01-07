@@ -13,15 +13,34 @@ const Post = ({
   data: {
     post,
     site: {
-      siteMetadata: { title },
+      siteMetadata: {
+        title,
+        author,
+      },
     },
   },
   location,
   previous,
   next,
 }) => (
-  <Layout location={location} title={title}>
-    <SEO title={post.title} description={post.excerpt} />
+  <Layout title={title}>
+    <SEO
+      title={post.title}
+      meta={[
+        // TODO
+        // {
+        //   property: `article:published_time`,
+        //   content: post.date,
+        // },
+        {
+          property: `article:author`,
+          content: author,
+        },
+      ]}
+      location={location.href}
+      description={post.excerpt}
+      isArticle
+    />
     <main>
       <Styled.h1>{post.title}</Styled.h1>
       <Styled.p
