@@ -64,7 +64,7 @@ export default ({
           fontSize: 2,
         })}
       >
-        I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments. I graduated from the University of Chicago with B.S. in mathematics and B.A. in physics. I am currently a PhD candidate at TTI-Chicago focusing on reinforcement learning (sequential decision making in an unknown environment). Professor Matthew Walter is my advisor.
+        I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments. I graduated from the University of Chicago with B.S. in mathematics and B.A. in physics (both with honors). I am currently a PhD candidate at TTI-Chicago focusing on reinforcement learning (sequential decision making in an unknown environment). Professor Matthew Walter is my advisor.
         <AboutLink to={cvPdf} linkText="my CV" />
       </Styled.p>
     </section>
