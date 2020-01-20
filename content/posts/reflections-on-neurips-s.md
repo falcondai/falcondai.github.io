@@ -1,6 +1,6 @@
 ---
 title: Reflections on NeurIPS's
-date: 2020-1-20
+date: 2020-01-20
 ---
 
 I have attended NeurIPS in 2013, 2018, and 2019. With the benefit of hindsight, I can clearly see the impact of the early experiences.
