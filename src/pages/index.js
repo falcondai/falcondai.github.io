@@ -78,7 +78,7 @@ export default ({
           <AboutLink to="#p-loop" linkText="2019c" />
         </li>
         <li>
-          Meaning and interpretation (semiotics, semantics, philosophy of language)
+          Meaning and interpretation (semiotics, semantics, metaphors)
           <AboutLink to="#p-w2v" linkText="2019e" />
         </li>
         <li>
@@ -103,12 +103,12 @@ export default ({
       <Styled.h2>Publications</Styled.h2>
       <Styled.ul>
         <li id="p-mehc">
-          Dai FZ, Walter MR. <em>Maximum Expected Hitting Cost of a Markov Decision Process and Informativeness of Rewards.</em> Neural Information Processing Systems (NeurIPS), 2019.
+          -, Walter MR. <em>Maximum Expected Hitting Cost of a Markov Decision Process and Informativeness of Rewards.</em> Neural Information Processing Systems (NeurIPS), 2019.
           <AboutLink to="https://arxiv.org/abs/1907.02114" linkText="paper" />
           <AboutLink to={mehcPoster} linkText="poster" />
         </li>
         <li id="p-stega">
-          Dai FZ, Cai Z. <em>Towards Near-imperceptible Steganographic Text.</em> Association for Computational Linguistics (ACL), 2019.
+          -, Cai Z. <em>Towards Near-imperceptible Steganographic Text.</em> Association for Computational Linguistics (ACL), 2019.
           <AboutLink to="https://arxiv.org/abs/1907.06679" linkText="paper" />
           <AboutLink to="http://www.livecongress.it/aol/indexSA.php?id=8CB5CB4E&ticket=" linkText="talk" />
           <AboutLink to={stegaPoster} linkText="poster" />
@@ -116,32 +116,32 @@ export default ({
           <AboutLink to="http://www.acl2019.org/EN/nominations-for-acl-2019-best-paper-awards.xhtml" linkText="nominated for best paper awards" />
         </li>
         <li id="p-plan">
-          Gehrmann S, Dai FZ, Elder H, Rush AM. <em>End-to-End Content and Plan Selection for Natural Language Generation.</em> International Conference on Natural Language Generation (INLG), 2018.
+          Gehrmann S, -, Elder H, Rush AM. <em>End-to-End Content and Plan Selection for Natural Language Generation.</em> International Conference on Natural Language Generation (INLG), 2018.
           <AboutLink to="https://arxiv.org/abs/1810.04700" linkText="paper" />
           <AboutLink to="https://github.com/sebastianGehrmann/diverse_ensembling" linkText="code" />
         </li>
         <li id="p-glyph">
-          Dai FZ, Cai Z. <em>Glyph-aware Embedding of Chinese Characters.</em> Subword and Character level models in NLP workshop at Empirical Methods in Natural Language Processing conference (EMNLP), 2017.
+          -*, Cai Z*. <em>Glyph-aware Embedding of Chinese Characters.</em> Subword and Character level models in NLP workshop at Empirical Methods in Natural Language Processing conference (EMNLP), 2017.
           <AboutLink to="https://arxiv.org/abs/1709.00028" linkText="paper" />
           <AboutLink to={glyphPoster} linkText="poster" />
           <AboutLink to="https://github.com/falcondai/chinese-char-lm" linkText="code" />
         </li>
         <li>
-          Towle VL, Dai Z, Zheng W, Issa N. <em>“Mapping Cortical Function with Event-Related Electrocorticography”</em> in <em>Functional Mapping of the Cerebral Cortex</em>, ed. Richard W. Byrne. (Springer, 2016), 91-104.
+          Towle VL, -, Zheng W, Issa N. <em>“Mapping Cortical Function with Event-Related Electrocorticography”</em> in <em>Functional Mapping of the Cerebral Cortex</em>, ed. Richard W. Byrne. (Springer, 2016), 91-104.
           <AboutLink to="https://link.springer.com/chapter/10.1007/978-3-319-23383-3_6" linkText="chapter" />
           <AboutLink to="https://link.springer.com/book/10.1007/978-3-319-23383-3" linkText="book" />
         </li>
         <li id="p-electrode">
-          Brang D, Dai Z, Zhang W, Towle VL. <em>Registering Imaged ECoG Electrodes to Human Cortex: A Geometry-based Technique.</em> Journal of neuroscience methods, 64-73. 2016.
+          Brang D, -, Zhang W, Towle VL. <em>Registering Imaged ECoG Electrodes to Human Cortex: A Geometry-based Technique.</em> Journal of neuroscience methods, 64-73. 2016.
           <AboutLink to="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5075506/" linkText="paper" />
           <AboutLink to="https://github.com/towle-lab/electrode-registration-app" linkText="software" />
         </li>
         <li>
-          Brang D, Towle VL, Suzuki S, Hillyard SA, Di Tusa S, Dai Z, Wu S, Tao J, Grabowecky M. <em>Peripheral sounds rapidly activate visual cortex: evidence from electrocorticography.</em> Journal of Neurophysiology, 3023-3028. 2015.
+          Brang D, Towle VL, Suzuki S, Hillyard SA, Di Tusa S, -, Wu S, Tao J, Grabowecky M. <em>Peripheral sounds rapidly activate visual cortex: evidence from electrocorticography.</em> Journal of Neurophysiology, 3023-3028. 2015.
           <AboutLink to="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4737427/" linkText="paper" />
         </li>
         <li>
-          Towle VL, Minama Reddy GK, Dai Z, Zhang W, Brang D, Hunter S, Kohrman MH, Marcucilli CJ, Tao J, Rossi MA, Frim DM, Byrne RW. <em>Chasing Language Through the Brain: Three Successive Parallel Networks.</em> Society for the Neurobiology of
+          Towle VL, Minama Reddy GK, -, Zhang W, Brang D, Hunter S, Kohrman MH, Marcucilli CJ, Tao J, Rossi MA, Frim DM, Byrne RW. <em>Chasing Language Through the Brain: Three Successive Parallel Networks.</em> Society for the Neurobiology of
           Language Conference, 2014.
         </li>
       </Styled.ul>
@@ -151,15 +151,15 @@ export default ({
       <Styled.h2>Working papers</Styled.h2>
       <Styled.ul>
         <li id="p-w2v">
-          Dai FZ. <em>Word2vec Conjecture and A Limitative Result.</em> In submission, 2019.
+          -. <em>Word2vec Conjecture and A Limitative Result.</em> In submission, 2019.
           <AboutLink href="mailto:hello@falcond.ai?subject=Manuscript request" linkText="manuscript available upon request" />
         </li>
         <li id="p-loop">
-          Dai FZ, Walter MR. <em>Loop Estimators for Discounted Values in Markov Reward Processes.</em> In submission, 2019.
+          -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> In submission, 2019.
           <AboutLink href="mailto:hello@falcond.ai?subject=Manuscript request" linkText="manuscript available upon request" />
         </li>
         <li id="p-diode">
-          Vasiljevic I, Kolkin N, Zhang S, Luo R, Wang H, Dai FZ, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset.</em> In submission, 2019.
+          Vasiljevic I, Kolkin N, Zhang S, Luo R, Wang H, -, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset.</em> In submission, 2019.
           <AboutLink to="https://arxiv.org/abs/1908.00463" linkText="preprint" />
           <AboutLink to="https://diode-dataset.org/" linkText="website" />
         </li>
