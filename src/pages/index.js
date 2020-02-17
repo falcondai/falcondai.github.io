@@ -166,6 +166,45 @@ export default ({
       </Styled.ul>
     </section>
 
+    <section id="presentations">
+      <Styled.h2>Selected presentations</Styled.h2>
+      <Styled.ul>
+        <li>
+          -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes</em>. Poster session at Algorithmic Learning Theory (ALT), 2020.
+        </li>
+        <li>
+          -, Walter MR. <em>Finite Time Analysis of Potential-based Reward Shaping</em>. Reinforcement Learning and Decision Making (RLDM), 2019. [Student travel fellowship]
+        </li>
+        <li>
+          Vasiljevic I, Kolkin N, Luo R, Wang H, -, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset</em>. 3D Scene Understanding for Vision, Graphics, and Robotics workshop at Computer Vision and Pattern Recognition (CVPR), 2019.
+        </li>
+        <li>
+          -, Cai Z. <em>Towards Near-imperceptible Steganographic Text</em>. Midwest Machine Learning Symposium (MMLS), 2019.
+        </li>
+        <li>
+          - and others at RIPL @ TTIC. Rubik’s cube solving robot. National robotics week special exhibit at the Museum of Science and Industry, 2019.
+        </li>
+        <li>
+          -, Walter MR. <em>Reward-adjusted Diameters and Their Conditioning by Potential-based Reward Shaping</em>. Learning by Instruction workshop at Neural Information Processing Systems (NeurIPS), 2018.
+        </li>
+        <li>
+          - and others at RIPL @ TTIC. Checkers-playing robot. National robotics week special exhibit at the Museum of Science and Industry, 2018.
+        </li>
+        <li>
+          Schaff C*, -*, Walter MR. <em>Towards Active Imitation Learning</em>. Learning from Demonstrations in High-Dimensional Feature Spaces workshop at Robotics: Science and Systems conference (RSS), 2017. [Student travel grant award]
+        </li>
+        <li>
+          -, Walter MR. <em>Notepad-Augmented Environments in Reinforcement Learning</em>. Midwest Robotics workshop, 2017.
+        </li>
+        <li>
+          -, Cai Z. <em>Glyph-based Visual Chinese Character Embedding</em>. Midwest Speech and Language Days (MSLD), 2017.
+        </li>
+        <li>
+          -, Nettsheim G. <em>Simulation and Modeling of the Anode of the Proposed Large-Area Picosecond Photo-Detector</em>. Chicago Area Undergraduate Research Symposium, 2011.
+        </li>
+      </Styled.ul>
+    </section>
+
     <section id="past">
       <Styled.h2>Past works</Styled.h2>
       <Styled.ul>
