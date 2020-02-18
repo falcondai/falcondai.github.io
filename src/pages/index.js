@@ -156,7 +156,7 @@ export default ({
         </li>
         <li id="p-loop">
           -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> In submission, 2019.
-          <AboutLink href="mailto:hello@falcond.ai?subject=Manuscript request" linkText="manuscript available upon request" />
+          <AboutLink to="https://arxiv.org/abs/2002.06299" linkText="preprint" />
         </li>
         <li id="p-diode">
           Vasiljevic I, Kolkin N, Zhang S, Luo R, Wang H, -, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset.</em> In submission, 2019.
