@@ -102,6 +102,10 @@ export default ({
     <section id="publications">
       <Styled.h2>Publications</Styled.h2>
       <Styled.ul>
+        <li id="p-chasing">
+          Zheng W, Minama Reddy GK, -, Chandramani A, Brang D, Hunter S, Kohrman MH, Rose S, Rossi M, Tao J, Wu S, Byrne R, Frim DM, Warnke P, Towle VL. <em>Chasing Language Through the Brain: Successive Parallel Networks.</em> Clinical Neurophysiology, 2020.
+          <AboutLink to="https://doi.org/10.1016/j.clinph.2020.10.007" linkText="paper" />
+        </li>
         <li id="p-mehc">
           -, Walter MR. <em>Maximum Expected Hitting Cost of a Markov Decision Process and Informativeness of Rewards.</em> Neural Information Processing Systems (NeurIPS), 2019.
           <AboutLink to="https://arxiv.org/abs/1907.02114" linkText="paper" />
@@ -152,7 +156,7 @@ export default ({
       <Styled.ul>
         <li id="p-w2v">
           -. <em>Word2vec Conjecture and A Limitative Result.</em> In submission, 2019.
-          <AboutLink href="mailto:hello@falcond.ai?subject=Manuscript request" linkText="manuscript available upon request" />
+          <AboutLink to="https://arxiv.org/abs/2010.12719" linkText="preprint" />
         </li>
         <li id="p-loop">
           -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> In submission, 2019.
