@@ -75,7 +75,7 @@ export default ({
         <li>
           Foundation of reinforcement learning (optimism, regret, safety)
           <AboutLink to="#p-mehc" linkText="2019b" />
-          <AboutLink to="#p-loop" linkText="2019c" />
+          <AboutLink to="#p-loop" linkText="2021a" />
         </li>
         <li>
           Meaning and interpretation (semiotics, semantics, metaphors)
@@ -102,6 +102,10 @@ export default ({
     <section id="publications">
       <Styled.h2>Publications</Styled.h2>
       <Styled.ul>
+        <li id="p-loop">
+          -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> To appear, Association for the Advancement of Artificial Intelligence conference (AAAI) 2021.
+          <AboutLink to="https://arxiv.org/abs/2002.06299" linkText="preprint" />
+        </li>
         <li id="p-chasing">
           Zheng W, Minama Reddy GK, -, Chandramani A, Brang D, Hunter S, Kohrman MH, Rose S, Rossi M, Tao J, Wu S, Byrne R, Frim DM, Warnke P, Towle VL. <em>Chasing Language Through the Brain: Successive Parallel Networks.</em> Clinical Neurophysiology, 2020.
           <AboutLink to="https://doi.org/10.1016/j.clinph.2020.10.007" linkText="paper" />
@@ -157,10 +161,6 @@ export default ({
         <li id="p-w2v">
           -. <em>Word2vec Conjecture and A Limitative Result.</em> In submission, 2019.
           <AboutLink to="https://arxiv.org/abs/2010.12719" linkText="preprint" />
-        </li>
-        <li id="p-loop">
-          -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> In submission, 2019.
-          <AboutLink to="https://arxiv.org/abs/2002.06299" linkText="preprint" />
         </li>
         <li id="p-diode">
           Vasiljevic I, Kolkin N, Zhang S, Luo R, Wang H, -, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset.</em> In submission, 2019.
