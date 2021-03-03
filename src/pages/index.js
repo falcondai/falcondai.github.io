@@ -13,8 +13,11 @@ import cvPdf from '../assets/docs/cv-web.pdf'
 import mehcPoster from '../assets/docs/poster-mehc.pdf'
 import stegaPoster from '../assets/docs/poster-steganographic-text.pdf'
 import glyphPoster from '../assets/docs/poster-glyph.pdf'
+import loopPoster from '../assets/docs/poster-loop-estimator.pdf'
 // Images
 import brainPrintImg from '../assets/images/3d-printed-brain.jpg'
+// Slides
+import loopSlides from '../assets/docs/slides-loop-estimator.pdf'
 
 const AboutLink = ({ to, linkText, ...props }) => (
   <Styled.a
@@ -103,8 +106,12 @@ export default ({
       <Styled.h2>Publications</Styled.h2>
       <Styled.ul>
         <li id="p-loop">
-          -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> To appear, Association for the Advancement of Artificial Intelligence conference (AAAI) 2021.
+          -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> Proceedings of Association for the Advancement of Artificial Intelligence Conference (AAAI), 2021.
           <AboutLink to="https://arxiv.org/abs/2002.06299" linkText="preprint" />
+          <AboutLink to="https://github.com/falcondai/loop-estimator" linkText="code" />
+          <AboutLink to="https://slideslive.com/embed/presentation/38949140?url=https%3A%2F%2Fvirtual.2021.aaai.org%2Fpaper_AAAI-9350.html&origin=https%3A%2F%2Fvirtual.2021.aaai.org&target_id=presentation-embed&auto_play=&zoom_ratio=&disable_fullscreen=&locale=en&demo=&vertical_enabled=true&vertical_enabled_on_mobile=&vertical_when_width_lte=500&allow_hidden_controls_when_paused=true&debug_slideslive_player=" linkText="talk" />
+          <AboutLink to={loopSlides} linkText="slides" />
+          <AboutLink to={loopPoster} linkText="poster" />
         </li>
         <li id="p-chasing">
           Zheng W, Minama Reddy GK, -, Chandramani A, Brang D, Hunter S, Kohrman MH, Rose S, Rossi M, Tao J, Wu S, Byrne R, Frim DM, Warnke P, Towle VL. <em>Chasing Language Through the Brain: Successive Parallel Networks.</em> Clinical Neurophysiology, 2020.
