@@ -205,7 +205,7 @@ export default ({
       <Styled.h2>Past works</Styled.h2>
       <Styled.ul>
         <li>Electrocochleography (ECoG) electrode MR-CT registration: <Styled.a href="https://github.com/towle-lab/electrode-registration-app">software</Styled.a>.</li>
-        <li>TwiThinks, a Twitter data analytics project that studies and visualizes Twitter data. Our realtime <Styled.a href="https://twitter.com/search?q=(obama%20OR%20romney)%20(%23ivoted)%20until%3A2012-12-31%20since%3A2012-11-01&src=typed_query">#ivoted</Styled.a> (for Obama vs Romney) scoreboard received 20K+ hits on Election Day 2012. It was <Styled.a href="https://www.csail.mit.edu/news/computer-science-students-look-twitter-clues-election">featured</Styled.a> on MIT-CSAIL news.</li>
+        <li>TwiThinks, a Twitter data analytics project that studies and visualizes Twitter data. Our realtime #ivoted (for Obama vs Romney) scoreboard received 20K+ hits on Election Day 2012. It was <Styled.a href="https://www.csail.mit.edu/news/computer-science-students-look-twitter-clues-election">featured</Styled.a> on MIT-CSAIL news.</li>
         <li>Once ranked 164th on <Styled.a href="https://www.kaggle.com/falcon">Kaggle</Styled.a>.</li>
         <li><Styled.a href="https://chrome.google.com/webstore/detail/wikipedia-plus/fkfdafnifmdahipdpcbpefhjlceippna">Wikipedia Plus</Styled.a>, a Chrome extension that enhances Wikipedia's user experience.</li>
         <li>3D printing my MRI-scanned brain (reconstructed via Freesurfer): <Styled.a href={brainPrintImg}>photo</Styled.a> and <Styled.a href="https://www.thingiverse.com/thing:262832">mesh</Styled.a>.</li>
