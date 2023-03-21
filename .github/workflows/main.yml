@@ -32,4 +32,4 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
     - name: Build and deploy
-      run: npm run deploy --openssl-legacy-provider -- -r https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git -m "Built from $GITHUB_SHA"
+      run: npm run deploy -- -r https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git -m "Built from $GITHUB_SHA"
