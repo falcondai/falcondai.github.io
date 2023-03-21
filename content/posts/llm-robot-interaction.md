@@ -11,6 +11,36 @@ At a high level, there is a chasm between the natural language for a human user 
 
 LLMs such as OpenAI GPT-3.5 are quite capable of code generation given just a textual description, such as programming problems. Instead of relying on a clever intermediate structured representation, LLMs are trained end-to-end to produce the final answer (by continuing the supplied prompts). Having been trained on the massive corpus covering many topics on the Internet, they seem to have implicitly captured an unprecedented amount of _common sense_ that we share. This capability suggests a way forward beyond the tedious engineering of effectively domain-specific languages for each robot and each environment.
 
+For example, we can get Anthropic Claude v1.2 to brew and serve coffee from a suggestive prompt of incomplete Python snippet (zero-shot!).
+
+```python
+from env import turn_on_coffee_machine, turn_off_coffee_machine, locate_cup
+from cooking import resolve_ingredients
+from two_arm_robot import grasp_object_left, grasp_object_right, place_object_left, place_object_right, plan_motion
+
+# A capable household robot.
+def brew_and_serve_coffee(coffee_type, kitchen_layout, serving_location):
+```
+
+The LLM completes it into:
+```python
+def brew_and_serve_coffee(coffee_type, kitchen_layout, serving_location):
+    turn_on_coffee_machine()  # Turn on the coffee machine.
+    ingredients = resolve_ingredients(coffee_type)  # Figure out the ingredients we need.
+    cup_location = locate_cup(kitchen_layout)  # Find a cup.
+    grasp_object_left(cup_location)  # Grasp the cup with the left arm.
+
+    for ingredient in ingredients:
+        ingredient_location = locate_object(ingredient, kitchen_layout)  # Find the ingredient.
+        grasp_object_right(ingredient_location)  # Grasp the ingredient container with the right arm.
+        place_object_left(ingredient_location)  # Pour the ingredient into the cup.
+        grasp_object_right(ingredient_location)  # Put the ingredient container back.
+
+    place_object_left(serving_location)  # Place the full cup at the serving location.
+    turn_off_coffee_machine()  # Turn off the coffee machine.
+```
+Without definitions of the unlying functions, it is not clear that this will work but it clearly demonstrates that the LLM knows about coffee making in a kitchen at some level of details and could express it in Python (in terms of controlling a two-armed robot).
+
 ## Approach in Code-as-policies
 
 An interesting recent work attempts to bridge this gap with LLM is [code-as-policies](https://code-as-policies.github.io). This work has some attractive features: it uses a trained LLM without any extra training and LLM generates executable Python code for the robot. But an LLM such as GPT-3.5 cannot perceive an image directly. How can we specialize its generation for a specific situation?
