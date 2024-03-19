@@ -77,8 +77,9 @@ export default ({
       <Styled.ul>
         <li>
           Foundation of reinforcement learning (optimism, regret, safety)
-          <AboutLink to="#p-mehc" linkText="2019b" />
+          <AboutLink to="#p-sas" linkText="2024a" />
           <AboutLink to="#p-loop" linkText="2021a" />
+          <AboutLink to="#p-mehc" linkText="2019b" />
         </li>
         <li>
           Meaning and interpretation (semiotics, semantics, metaphors)
@@ -95,9 +96,20 @@ export default ({
         </li>
         <li>
           Language modeling (Chinese, glyph, summarization)
+          <AboutLink to="#p-sas" linkText="2024a" />
           <AboutLink to="#p-stega" linkText="2019a" />
           <AboutLink to="#p-plan" linkText="2018" />
           <AboutLink to="#p-glyph" linkText="2017" />
+        </li>
+        <li>
+          Robotics (reinforcement learning, imitation learning, tactile sensing)
+          <AboutLink to="#p-sas" linkText="2024a" />
+          <AboutLink to="#p-hear-road" linkText="2024b" />
+        </li>
+        <li>
+          Human cortical processing of language (electrocorticography, language mapping)
+          <AboutLink to="#p-chasing" linkText="2020" />
+          <AboutLink to="#p-electrode" linkText="2016a" />
         </li>
       </Styled.ul>
     </section>
@@ -125,6 +137,7 @@ export default ({
         <li id="p-stega">
           -, Cai Z. <em>Towards Near-imperceptible Steganographic Text.</em> Association for Computational Linguistics (ACL), 2019.
           <AboutLink to="https://arxiv.org/abs/1907.06679" linkText="paper" />
+          <AboutLink to="https://huggingface.co/spaces/falcondai/stego-lm" linkText="demo" />
           <AboutLink to="http://www.livecongress.it/aol/indexSA.php?id=8CB5CB4E&ticket=" linkText="talk" />
           <AboutLink to={stegaPoster} linkText="poster" />
           <AboutLink to="https://github.com/falcondai/lm-steganography" linkText="code" />
@@ -165,14 +178,17 @@ export default ({
     <section id="working-papers">
       <Styled.h2>Working papers</Styled.h2>
       <Styled.ul>
-        <li id="p-w2v">
-          -. <em>Word2vec Conjecture and A Limitative Result.</em> In submission, 2019.
-          <AboutLink to="https://arxiv.org/abs/2010.12719" linkText="preprint" />
+        <li id="p-sas">
+          Yunis D, Jung J, -, Walter MR. <em>Subwords as Skills: Tokenization for Sparse-Reward RL</em>. In submission, 2024.
+          <AboutLink to="https://arxiv.org/abs/2309.04459" linkText="preprint" />
         </li>
-        <li id="p-diode">
-          Vasiljevic I, Kolkin N, Zhang S, Luo R, Wang H, -, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset.</em> In submission, 2019.
-          <AboutLink to="https://arxiv.org/abs/1908.00463" linkText="preprint" />
-          <AboutLink to="https://diode-dataset.org/" linkText="website" />
+        <li id="p-hear-road">
+          Mason W, Brenken D, -, Cruz Castillo RG, St-Martin Cormier O, Sedal A. <em>Acoustic Tactile Sensing for Mobile Robot Wheels</em>. In submission, 2024.
+          <AboutLink to="https://arxiv.org/abs/2402.18682" linkText="preprint" />
+        </li>
+        <li id="p-w2v">
+          -. <em>Word2vec Conjecture and A Limitative Result</em>. In submission, 2019.
+          <AboutLink to="https://arxiv.org/abs/2010.12719" linkText="preprint" />
         </li>
       </Styled.ul>
     </section>
@@ -181,10 +197,15 @@ export default ({
       <Styled.h2>Selected presentations</Styled.h2>
       <Styled.ul>
         <li>
-          -, Walter MR. <em>Finite Time Analysis of Potential-based Reward Shaping</em>. Reinforcement Learning and Decision Making conference (RLDM), 2019. [Student travel fellowship]
+          Yunis D, Jung J, -, Walter MR. <em>Subwords as Skills: Tokenization for Sparse-Reward RL</em>. Generalization in Planning workshop at NeurIPS, 2023.
         </li>
         <li>
+          -, Walter MR. <em>Finite Time Analysis of Potential-based Reward Shaping</em>. Reinforcement Learning and Decision Making conference (RLDM), 2019. [Student travel fellowship]
+        </li>
+        <li id="p-diode">
           Vasiljevic I, Kolkin N, Luo R, Wang H, -, Daniele AF, Mostajabi M, Basart S, Walter MR, Shakhnarovich G. <em>DIODE: A Dense Indoor and Outdoor DEpth Dataset</em>. 3D Scene Understanding for Vision, Graphics, and Robotics workshop at Computer Vision and Pattern Recognition (CVPR), 2019.
+          <AboutLink to="https://arxiv.org/abs/1908.00463" linkText="preprint" />
+          <AboutLink to="https://diode-dataset.org/" linkText="website" />
         </li>
         <li>
           - and others at RIPL @ TTIC. Rubik’s cube solving robot. National robotics week special exhibit at the Museum of Science and Industry, 2019.
