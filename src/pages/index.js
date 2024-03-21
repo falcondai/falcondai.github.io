@@ -138,7 +138,7 @@ export default ({
           -, Cai Z. <em>Towards Near-imperceptible Steganographic Text.</em> Association for Computational Linguistics (ACL), 2019.
           <AboutLink to="https://arxiv.org/abs/1907.06679" linkText="paper" />
           <AboutLink to="https://huggingface.co/spaces/falcondai/stego-lm" linkText="demo" />
-          <AboutLink to="http://www.livecongress.it/aol/indexSA.php?id=8CB5CB4E&ticket=" linkText="talk" />
+          <AboutLink to="https://vimeo.com/385200929" linkText="talk" />
           <AboutLink to={stegaPoster} linkText="poster" />
           <AboutLink to="https://github.com/falcondai/lm-steganography" linkText="code" />
           <AboutLink to="http://www.acl2019.org/EN/nominations-for-acl-2019-best-paper-awards.xhtml" linkText="nominated for best paper awards" />

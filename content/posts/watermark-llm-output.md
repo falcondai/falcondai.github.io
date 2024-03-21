@@ -1,0 +1,15 @@
+---
+title: On Watermarking (Large) Language Model Output
+date: 2024-03-19
+---
+
+The increasingly capable LLMs and diffusion models are being used to generate more and more of the text and image content on the internet. In order to counter the perceived danger of AI generated content, various organizations and policy making bodies have proposed to watermark such AI-generated content. One of my past [research](https://arxiv.org/abs/1907.06679) presents an approach to this problem by reducing invisible watermarking to linguistic steganography. In [steganography](https://en.wikipedia.org/wiki/Steganography), we try to hide the hiding by encoding a secret message in a natural looking message to assuage others' suspicion.
+
+## What is steganography?
+As usual in cryptography, we can explain the steganography protocol with Alice and Bob. This time they role play as two prisoners who want to communicate with each other on an escape plan without alerting the warden who can read the messages. Standard encryption protocols usually produce messages (ciphertext) that look alien or _random_. Even though the warden intercepting such messages won't be able to read their escape plan (plaintext), their _unnatural_ appareance may be sufficient to land Alice and Bob in trouble. Steganography instead hides the message inside a natural looking text (stegotext) to evade scrutiny. More formally, we define "naturalness" as being plausible under the distribution of the objects in consideration. Fundamentally, encoding bits can disturb the carrier, so it is easy to hide a few bits in a high bandwidth carrier medium (in terms of information entropy). It is hard in the case of natural text because it has a much lower bandwidth than an audio recording or a printed page. This is the core problem my research tackled with improved algorithms. (For more details on the proposed algorithm `patient-Huffman`, you could watch my [talk](https://vimeo.com/385200929).)
+
+## Invisible watermarking -> steganography
+In this reduction, an LLM service provider plays the roles of both Alice and Bob, and tries to encode a watermark in such a way that it can be recovered, thus verify whether the text is LLM-generated or not, later. LLM service users play the role of the warden. In the stegosystem I proposed, the LLM service provider will keep an encryption key and a watermark phrase as secrets.
+
+## Demo
+As an exercise to familiarize myself with the huggingface ecosystem, I built a live [demo](https://falcondai-stego-lm.hf.space). In order to invisibly watermark the generated content--in this case by GPT-2--, one can follow the steps on the sender side and enter "by GPT-2" as plaintext. The generated stegotext should be fluent (as much as sampling from a small GPT-2 model). When an auditor with the encryption key wishes to check if a piece of text was watermarked, they can follow the procedure of the receiver (Bob) in the stegosystem discussed. Importantly, observe that a piece of text not watermarked will trigger an error in the demo when being deciphered.
