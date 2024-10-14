@@ -70,8 +70,8 @@ module.exports = {
     description: `The personal website and blog of Falcon Dai.`,
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/falcondai`,
+        name: `x`,
+        url: `https://x.com/falcondai`,
       },
       {
         name: `github`,

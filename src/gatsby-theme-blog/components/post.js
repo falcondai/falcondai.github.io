@@ -63,7 +63,7 @@ const Post = ({
           color: `muted`,
         })}
       >
-        🛠Before a comment system is integrated, feel free to talk to me about this article via <Styled.a href="https://twitter.com/falcondai">{authorTwitter}</Styled.a> on twitter.
+        🛠Before a comment system is integrated, feel free to talk to me about this article via <Styled.a href="https://x.com/falcondai">{authorTwitter}</Styled.a> on X/twitter.
       </Styled.div>
     </main>
     <PostFooter {...{ previous, next }} />

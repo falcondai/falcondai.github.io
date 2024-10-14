@@ -67,7 +67,7 @@ export default ({
           fontSize: 2,
         })}
       >
-        I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments. I graduated from the University of Chicago with B.S. in mathematics and B.A. in physics (both with honors). I am currently a PhD candidate at TTI-Chicago focusing on reinforcement learning (sequential decision making in an unknown environment). Professor Matthew Walter is my advisor.
+        I like to explore and create. I spend most of my time studying how to realize artificial intelligence in physical and virtual environments. I graduated from the University of Chicago with B.S. in mathematics and B.A. in physics (both with honors), PhD in computer science (specializing in reinforcement learning) at TTI-Chicago advised by Professor Matthew Walter. I currently work at Symbolica AI as a researcher.
         <AboutLink to={cvPdf} linkText="my CV" />
       </Styled.p>
     </section>
@@ -76,7 +76,7 @@ export default ({
       <Styled.h2>Research interests</Styled.h2>
       <Styled.ul>
         <li>
-          Foundation of reinforcement learning (optimism, regret, safety)
+          Reinforcement learning (optimism, regret, safety)
           <AboutLink to="#p-sas" linkText="2024a" />
           <AboutLink to="#p-loop" linkText="2021a" />
           <AboutLink to="#p-mehc" linkText="2019b" />
@@ -117,6 +117,10 @@ export default ({
     <section id="publications">
       <Styled.h2>Publications</Styled.h2>
       <Styled.ul>
+        <li id="p-sas">
+          Yunis D, Jung J, -, Walter MR. <em>Subwords as Skills: Tokenization for Sparse-Reward RL</em>. Neural Information Processing Systems (NeurIPS), 2024.
+          <AboutLink to="https://arxiv.org/abs/2309.04459" linkText="preprint" />
+        </li>
         <li id="p-loop">
           -, Walter MR. <em>Loop Estimator for Discounted Values in Markov Reward Processes.</em> Proceedings of Association for the Advancement of Artificial Intelligence Conference (AAAI), 2021.
           <AboutLink to="https://arxiv.org/abs/2002.06299" linkText="preprint" />
@@ -178,10 +182,6 @@ export default ({
     <section id="working-papers">
       <Styled.h2>Working papers</Styled.h2>
       <Styled.ul>
-        <li id="p-sas">
-          Yunis D, Jung J, -, Walter MR. <em>Subwords as Skills: Tokenization for Sparse-Reward RL</em>. In submission, 2024.
-          <AboutLink to="https://arxiv.org/abs/2309.04459" linkText="preprint" />
-        </li>
         <li id="p-hear-road">
           Mason W, Brenken D, -, Cruz Castillo RG, St-Martin Cormier O, Sedal A. <em>Acoustic Tactile Sensing for Mobile Robot Wheels</em>. In submission, 2024.
           <AboutLink to="https://arxiv.org/abs/2402.18682" linkText="preprint" />
@@ -239,7 +239,7 @@ export default ({
     <section id="contact">
       <Styled.h2>Contact</Styled.h2>
       <Styled.ul>
-        <li>twitter <Styled.a href="https://twitter.com/falcondai">@falcondai</Styled.a></li>
+        <li>X/twitter <Styled.a href="https://x.com/falcondai">@falcondai</Styled.a></li>
         <li>email <Styled.a href="mailto:hello@falcond.ai">hello@falcond.ai</Styled.a></li>
       </Styled.ul>
     </section>
